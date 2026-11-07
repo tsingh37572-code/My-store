@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="announce" class="announce"></div>
+<header class="hdr">
+  <button class="ic" id="btnMenu" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  <a href="#/" class="logo" id="logo"></a>
+  <div class="hdr-r">
+    <button class="ic" id="btnSearch" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+    <button class="ic cartbtn" id="btnCart" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a1 1 0 001 .8h8.9a1 1 0 001-.8L20 8H6"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span id="cartCount">0</span></button>
+  </div>
+</header>
+<div class="searchbar" id="searchbar"><form id="searchForm"><input id="searchInput" placeholder="Search products" autocomplete="off"><button>Search</button></form></div>
+
+<nav class="drawer left" id="menu"><div class="drawer-h"><b>Menu</b><button class="ic" data-close>✕</button></div><div id="menuLinks"></div></nav>
+<aside class="drawer right" id="cart"><div class="drawer-h"><b>Your Cart</b><button class="ic" data-close>✕</button></div><div id="cartBody"></div></aside>
+<div class="scrim" id="scrim"></div>
+
+<main id="app"></main>
+<footer class="foot" id="foot"></footer>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
